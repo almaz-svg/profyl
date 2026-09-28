@@ -30,6 +30,24 @@ export const portfolio = {
     quote:
       'Для меня хороший проект — это не только красивый экран. Это понятная идея, рабочая логика, чистая структура и результат, который можно показать людям.',
     note: 'React, Node.js, AI-проекты и командные решения',
+    images: [
+      {
+        src: '/img/chatgpt-230340.png',
+        alt: 'AI-generated interface visual for portfolio presentation',
+      },
+      {
+        src: '/img/chatgpt-230148.png',
+        alt: 'AI-generated digital product design visual',
+      },
+      {
+        src: '/img/high-conversion-landing.jpg',
+        alt: 'High conversion landing page design reference visual',
+      },
+      {
+        src: '/img/chatgpt-231007.png',
+        alt: 'AI-generated web design concept visual',
+      },
+    ],
   },
   achievement: {
     team: 'IPT Group',

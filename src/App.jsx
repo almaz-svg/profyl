@@ -1,7 +1,5 @@
 import { portfolio } from './portfolioData.js';
 
-const imageLabels = ['ux', 'ui', 'web', 'brand'];
-
 function ButtonLink({ href, children, variant = 'dark' }) {
   return (
     <a className={`button button--${variant}`} href={href}>
@@ -55,10 +53,10 @@ function EditorialIntro() {
         Подход к дизайну
       </h2>
       <div className="intro__images" aria-hidden="true">
-        {imageLabels.map((label, index) => (
-          <div className={`scrap scrap--${index + 1}`} key={label}>
-            {label}
-          </div>
+        {portfolio.intro.images.map((image, index) => (
+          <figure className={`scrap scrap--${index + 1}`} key={image.src}>
+            <img src={image.src} alt="" loading="lazy" />
+          </figure>
         ))}
       </div>
       <blockquote>

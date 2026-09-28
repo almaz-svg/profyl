@@ -45,3 +45,8 @@ test('hero copy is personalized for Almaz portfolio', () => {
   assert.match(heroText, /ALMAZ|FRONTEND|AI/i);
   assert.ok(portfolio.nav.some((item) => item.label === 'достижение'));
 });
+
+test('intro section uses real portfolio images', () => {
+  assert.equal(portfolio.intro.images.length, 4);
+  assert.ok(portfolio.intro.images.every((image) => image.src.startsWith('/img/')));
+});
