@@ -81,7 +81,7 @@ function Cases() {
       <div className="cases__grid">
         {portfolio.cases.map((item, index) => (
           <article className="case-card" key={item.title}>
-            <div className="case-card__thumb" aria-hidden="true">
+            <div className={`case-card__thumb ${item.image ? 'case-card__thumb--image' : ''}`} aria-hidden="true">
               {item.image ? <img src={item.image.src} alt="" loading="lazy" /> : null}
               <span>{String(index + 1).padStart(2, '0')}</span>
             </div>

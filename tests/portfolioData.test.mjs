@@ -54,4 +54,5 @@ test('intro section uses real portfolio images', () => {
 test('case cards can use real cover images', () => {
   assert.equal(portfolio.cases[0].image.src, '/img/high-conversion-landing.jpg');
   assert.equal(portfolio.cases[1].image.src, '/img/chatgpt-231007.png');
+  assert.equal(portfolio.cases[2].image.src, '/img/chatgpt-235010.png');
 });

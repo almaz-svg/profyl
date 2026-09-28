@@ -356,6 +356,10 @@ button:focus-visible {
   filter: grayscale(1);
 }
 
+.case-card__thumb--image {
+  filter: none;
+}
+
 .case-card__thumb img {
   position: absolute;
   inset: 0;

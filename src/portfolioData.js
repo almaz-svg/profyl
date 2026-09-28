@@ -91,6 +91,10 @@ export const portfolio = {
       type: 'frontend',
       year: '2026',
       text: 'Адаптивная страница-портфолио с отдельными секциями, проверками и Node.js preview.',
+      image: {
+        src: '/img/chatgpt-235010.png',
+        alt: 'Colorful AI-generated React portfolio concept',
+      },
     },
   ],
   service: {
