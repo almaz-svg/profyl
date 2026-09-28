@@ -167,9 +167,12 @@ function Process() {
       <div className="process__grid">
         {portfolio.process.map((step) => (
           <article className="process-card" data-tilt key={step.number}>
-            <span>{step.number}</span>
-            <h3>{step.title}</h3>
-            <p>{step.text}</p>
+            <img className="process-card__image" src={step.image.src} alt="" loading="lazy" />
+            <div className="process-card__content">
+              <span>{step.number}</span>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </div>
           </article>
         ))}
       </div>

@@ -56,3 +56,9 @@ test('case cards can use real cover images', () => {
   assert.equal(portfolio.cases[1].image.src, '/img/chatgpt-231007.png');
   assert.equal(portfolio.cases[2].image.src, '/img/chatgpt-235010.png');
 });
+
+test('process cards use the provided process images', () => {
+  assert.equal(portfolio.process[0].image.src, '/img/card-01-idea-sketch.png');
+  assert.equal(portfolio.process[1].image.src, '/img/process-03-launch.png');
+  assert.equal(portfolio.process[2].image.src, '/img/card-03-launch-live-site.png');
+});

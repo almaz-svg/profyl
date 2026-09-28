@@ -110,16 +110,28 @@ export const portfolio = {
       number: '01',
       title: 'Идея',
       text: 'Определяю задачу, аудиторию и главный результат, который должен показать проект.',
+      image: {
+        src: '/img/card-01-idea-sketch.png',
+        alt: 'Idea sketch process card',
+      },
     },
     {
       number: '02',
       title: 'Интерфейс',
       text: 'Собираю структуру экранов, контент, визуальный ритм и адаптивные состояния.',
+      image: {
+        src: '/img/process-03-launch.png',
+        alt: 'Interface and launch process card',
+      },
     },
     {
       number: '03',
       title: 'Запуск',
       text: 'Переношу в код, проверяю сборку, тесты и локальный запуск проекта.',
+      image: {
+        src: '/img/card-03-launch-live-site.png',
+        alt: 'Live site launch process card',
+      },
     },
   ],
   collaboration: {
