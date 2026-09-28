@@ -50,3 +50,8 @@ test('intro section uses real portfolio images', () => {
   assert.equal(portfolio.intro.images.length, 4);
   assert.ok(portfolio.intro.images.every((image) => image.src.startsWith('/img/')));
 });
+
+test('case cards can use real cover images', () => {
+  assert.equal(portfolio.cases[0].image.src, '/img/high-conversion-landing.jpg');
+  assert.equal(portfolio.cases[1].image.src, '/img/chatgpt-231007.png');
+});

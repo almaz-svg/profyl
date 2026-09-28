@@ -71,12 +71,20 @@ export const portfolio = {
       type: 'interface',
       year: '2026',
       text: 'Концепт панели для анализа данных, рисков и ключевых показателей в понятном интерфейсе.',
+      image: {
+        src: '/img/high-conversion-landing.jpg',
+        alt: 'High conversion landing page interface concept',
+      },
     },
     {
       title: 'IPT Project Page',
       type: 'team',
       year: '2026',
       text: 'Подача командного достижения IPT Group с фото, источником и фактами конкурса.',
+      image: {
+        src: '/img/chatgpt-231007.png',
+        alt: 'AI-generated digital portfolio concept',
+      },
     },
     {
       title: 'React Portfolio',

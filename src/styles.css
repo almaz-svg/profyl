@@ -343,9 +343,11 @@ button:focus-visible {
 }
 
 .case-card__thumb {
+  position: relative;
   min-height: clamp(220px, 24vw, 390px);
   display: grid;
   align-items: end;
+  overflow: hidden;
   padding: 12px;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.28), transparent 42%),
@@ -354,7 +356,26 @@ button:focus-visible {
   filter: grayscale(1);
 }
 
+.case-card__thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.case-card__thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.55));
+}
+
 .case-card__thumb span {
+  position: relative;
+  z-index: 2;
   font-family: var(--font-display);
   font-size: 2.4rem;
 }
